@@ -43,7 +43,7 @@ TIP: Take extra care with *a* and *an* before an acronym or initialism (see <<a_
 
 Asciidoc includes five built-in admonition types: `NOTE`; `TIP`; `IMPORTANT`; `CAUTION`; `WARNING`.
 
-* We define our usage in this project at xref:core:ROOT:how-to-use-this-publication.adoc[].
+* We define our usage in this project at xref:home::how-to-use-this-publication.adoc[].
 * Learn about the markup at link:https://docs.antora.org/antora/latest/asciidoc/admonitions/[Admonitions^].
 
 We also use custom admonitions, based on the built-in types.
@@ -96,7 +96,7 @@ Also, choose your words such that you don't conflate things that the player does
 
 Asciidoc includes 'sidebar' markup that is suitable to hold content that is an 'aside' from the main content.
 
-* We define our usage in this project at xref:core:ROOT:how-to-use-this-publication.adoc[].
+* We define our usage in this project at xref:home::how-to-use-this-publication.adoc[].
 Sometimes an aside is a better fit than an admonition.
 Either way, don't overdo it.
 * Learn about the markup at link:https://docs.antora.org/antora/2.3/asciidoc/sidebar/[Sidebars^].
