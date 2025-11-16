@@ -43,13 +43,30 @@ TIP: Take extra care with *a* and *an* before an acronym or initialism (see <<a_
 
 Asciidoc includes five built-in admonition types: `NOTE`; `TIP`; `IMPORTANT`; `CAUTION`; `WARNING`.
 
-* We define our usage in this project at xref:core:ROOT:how-to-use-this-publication.adoc[].
-* Learn about the markup at link:https://docs.antora.org/antora/2.3/asciidoc/admonitions/[Admonitions^].
+* We define our usage in this project at xref:home::how-to-use-this-publication.adoc[].
+* Learn about the markup at link:https://docs.antora.org/antora/latest/asciidoc/admonitions/[Admonitions^].
 
 We also use custom admonitions, based on the built-in types.
 You can only use these with the block markup -- you can't use them with the inline markup.
 
-* For '{e40k} difference' notes, use footnotes in the form `+footnote:[{e40k-diff}]+`.
+[NOTE]
+.Workaround for PDF outputs
+=====
+Custom admonitions work well in HTML output, but PDF output just renders the base type -- and it is not easy to customise the PDF output in this respect.
+As a workaround until we can find a better approach, be sure to (a) add a title label to each custom admonition, and (b) preface the title text with the appropriate word and a colon, like this:
+
+[,asciidoc]
+----
+[NOTE.option]
+.Option: Title of this 'option' admonition
+====
+Body text of this 'option' admonition.
+====
+----
+
+=====
+
+* For notes about differences from {e40k}, don't use admonitions -- rather, use footnotes in the form `+footnote:[{e40k-diff}]+`.
 
 == ALPHA; BETA
 
@@ -79,7 +96,7 @@ Also, choose your words such that you don't conflate things that the player does
 
 Asciidoc includes 'sidebar' markup that is suitable to hold content that is an 'aside' from the main content.
 
-* We define our usage in this project at xref:core:ROOT:how-to-use-this-publication.adoc[].
+* We define our usage in this project at xref:home::how-to-use-this-publication.adoc[].
 Sometimes an aside is a better fit than an admonition.
 Either way, don't overdo it.
 * Learn about the markup at link:https://docs.antora.org/antora/2.3/asciidoc/sidebar/[Sidebars^].
